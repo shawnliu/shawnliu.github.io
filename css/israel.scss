@@ -10,37 +10,46 @@ ul, li {margin:0;padding:0;list-style: none}
 body {
   font-family: 'Karla', "Helvetica Neue", Helvetica, sans-serif;
   color: #333;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.6em;
   text-align: left;
 }
 
+.israel-alonso { 
+  margin: 20px;
+}
+img {
+  margin: 1em auto;
+  width: 100%;
+}
+h1 {
+  font-size: 16px;
+  font-weight: 700;       
+  max-width: 600px;
+  margin: 1.5em auto;
+}
+p {
+  max-width: 600px;
+  margin: 1.5em auto;
+}
+blockquote {
+  color: #666;
+  font-family: Georgia;
+  font-style: italic;
+  max-width: 500px;
+  margin: 1.5em auto;
+}
+
 @media screen and (min-width: 600px) {
 	body {
-    .israel-alonso { 
-      margin: 60px auto;
-      max-width: 800px;
-      img {
-        border: 1px solid #eee;
-      }
-      h1 {
-        font-size: 16px;
-        font-weight: 700;       
-        max-width: 600px;
-        margin: 1.5em auto;
-      }
-      p {
-        max-width: 600px;
-        margin: 1.5em auto;
-      }
-      blockquote {
-        color: #666;
-        font-family: Georgia;
-        font-style: italic;
-        max-width: 500px;
-        margin: 1.5em auto;
-      }
-    }
+    font-size: 18px;
+  }
+  img {
+    width: auto;
+  }
+  .israel-alonso { 
+    margin: 60px auto;
+    max-width: 800px;
   }
 }
