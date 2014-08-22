@@ -16,36 +16,11 @@ body {
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6em;
-  text-align: center;
-  img {
-    width: 100%;
-  }
-  &.home {
-    .wrapper, .footer { width: 94%; padding: 3% }
-    .portfolio { width: 940px; }
-  }
-  /* individual painting page */
-  &.painting {
-    .nav {
-      padding-top: 40px;
-    }
-    .container {width: 800px;}
-    .painting-show {width: 960px;}
-    .footer {
-      .left-col {display: none;}
-    }
-  }
-  /* overwrite nav styles */
-  &.default, &.portfolio {
-    header ul li a.paintings {
-      border-bottom: 2px solid #ccc;
-    }
-  }
-  &.info {
-    header ul li a.info {
-      border-bottom: 2px solid #ccc;
-    }
-  }
+  padding: 40px
+}
+
+img {
+  width: 100%;
 }
 
 a {
@@ -63,124 +38,9 @@ p {
   margin: 1em 0;
 }
 
-h2 {
-  color: #999;
-  font-size: 21px;
-  font-weight: 100;
-  letter-spacing: 0.1em;
-  line-height: 1.2em;
-  margin: 1em 0 2em 0;
-  &::before, .before {
-    position: absolute;
-    border-bottom: 1px solid #ccc;
-  }
-}
-
-
-/* Walls */
-#wall-2012 {
-  background-color: #fff;
-  padding: 0px 15px 60px 15px;
-}
-#wall-2011 {
-  background-color: #f1f1ed;
-  border-top: #eee;
-  padding: 60px 15px;
-}
-
-/* Portfolio styles */
-body.portfolio {
-  .painting {
-    padding: 15px 15px 30px 15px;
-    .caption {
-      font-size: 13px;
-      margin: 2em auto 1em;
-      width: 500px;
-    }
-  }
-  .landscape {
-    img {
-      max-width: 600px;
-    }
-  }
-  .portrait {
-    padding-top: 0;
-    img {
-      max-height: 540px;
-      width: auto;
-    }
-    .caption {
-      width: 400px;
-    }
-  }
-}
-
-/* Info page styles */
-body.info {
-  h2 {
-    color: #ccc;
-    font-size: 18px;
-    font-weight: 300;
-    margin: 2em 0 1em 0;
-  }
-  .content {
-    text-align: left;
-    width: 600px;
-  }
-}
-
-.footer {
-  margin: 30px auto;
-  color: #888;
-  font-size: 14px;
-  font-weight: 100;
-}
-
-header {
-  background-color: #f9f9f9; 
-  opacity: 0.9;
-  overflow: hidden;
-  position: fixed;
-  text-align: center;
-  width: 100%;
-  z-index: 900;
-  img {
-    margin-top: 0px;
-    width: 100%;
-  }
-  ul {
-    margin: 15px auto;
-    li {
-      display: inline-block;
-      width: auto;
-      a {
-        color: #333;
-        font-size: 15px;
-        font-weight: 100;
-        margin: 3px 7px;
-        text-decoration: none;
-        padding: 4px 1px;
-        &:hover {
-          border-bottom: 2px solid #666;
-        }
-        &.name {
-          color: #333;
-          font-weight: 500;
-        }
-      }
-    }
-  }
-}
-
-.content {
-  margin: 0px auto;
-  padding: 90px 0 0 0;
-  .intro {
-    margin: 20px auto;
-    p {
-      font-size: 18px;
-    }
-  }
+h1 {
+  font-size: 40px;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 600px) {
@@ -188,43 +48,5 @@ header {
       font-size: 16px;
       font-weight: 300;
       line-height: 1.6em;
-      &.home {
-      .wrapper {
-        padding: 15px;
-        width: 940px;
-        h1 {
-          float: left;
-          font-size: 32px;
-          font-weight: 600;
-          margin: 20px 0 0 0;          
-          width: 160px;
-        }
-      }
-      .intro {
-        p {
-          margin-left: 180px;
-        }
-        ul {
-          margin-left: 180px; 
-          li {
-            margin: 1em 0;
-          }
-        }
-      }
-      }
-      /* individual painting page */
-      &.painting {
-        .nav {
-          padding-top: 40px;
-        }
-        .container {width: 800px;}
-        .painting-show {width: 960px;}
-        .footer {
-          .left-col {display: none;}
-        }
-      }
     }
-
-
-
 }
