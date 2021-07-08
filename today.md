@@ -37,7 +37,7 @@ Today I sautéed spinach with carrots, and the dish was so popular that I was ba
 Today I spent a few minutes searching "giant squid cape town," on the internet, hoping to learn more about the baby giant squid that washed up on the shore of a beach near Cape Town. (Is there any sign of foul play? Where are its parents?)
 
 
-Today the little one got his braces removedt. For nearly a year, he had so much hardware in his mouth. That version of our little one, the one wearing braces, is now forever gone, along with the little one with glasses, the little one who, whenever he ran, shook his head from side to side like Stevie Wonder.
+Today the little one got his braces removed. For nearly a year, he had so much hardware in his mouth. That version of our little one, the one wearing braces, is now forever gone, along with the little one with glasses, the little one who, whenever he ran, shook his head from side to side like Stevie Wonder.
 
 Today I helped the middle schooler clean his very messy room. We wiped his floor, which was marked up by pencil lead. I taught him to categorize all the stuff piled on his desk (toys, stationery, books, magazines, electronics, trash). I found one sock (clean, thankfully) on his bookshelf and one dried-up contact on his desk.
 
