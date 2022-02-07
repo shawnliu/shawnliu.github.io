@@ -27,7 +27,7 @@ ul, li {margin:0;padding:0;list-style: none}
   --font-size-base: 10px;
   --font-size-XS: 1.1rem;
   --font-size-S: 1.4rem;
-  --font-size-M: 1.7rem;
+  --font-size-M: 1.6rem;
   --font-size-L: 2rem;
   --font-size-XL: 3rem;
   --font-size-XXL: 3.6rem;
@@ -71,7 +71,7 @@ body {
 h1 {
   font-size: var(--font-size-XL);
   font-weight: 800;
-  margin: 1em auto;
+  margin: 1.5em auto 1em auto;
   text-align: center;
 }
 
