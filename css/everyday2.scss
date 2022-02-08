@@ -1,7 +1,7 @@
 ---
 ---
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;700;800&display=swap');
 
 @mixin transition($tr) {
   -webkit-transition: $tr;
@@ -19,12 +19,21 @@ ul, li {margin:0;padding:0;list-style: none}
   --avatar-width-M: 40px;
   --color-white: #fff;
   --color-pink: rgb(255, 181, 252);
-  --color-bg: #f3f3f3;
+  --color-bg: rgb(243, 244, 239);
+  --color-bg-cal-div: rgb(243, 244, 239);
+  --color-bg-cal-grid: rgb(252, 253, 254);
+  --color-bg-cal-grid-hover: rgb(241, 255, 241);
+  --color-bg-cal-grid-checked: rgb(225, 253, 226);
+  --color-bg-cal-grid-missed: rgb(232, 233, 228);
+  --color-bg-cal-grid-today: rgb(225, 253, 226);
+  --color-bg-cal-grid-outrange: var(--color-bg-cal-div);
+  --color-bg-nav: var(--color-white);
   --color-bg-dark: rgb(27, 17, 74);
+  --color-highlight-today: red;
   --color-post-border: #ddd;
   --color-hr: #ccc;
   --color-txt: rgb(35, 28, 51);
-  --color-txt-link: #a221c2;
+  --color-txt-link: var(--color-txt);
   --color-txt-meta: #888;
   --color-txt-light: rgb(230, 228, 240);
   --color-txt-meta-light: rgb(134, 125, 168);
@@ -37,6 +46,8 @@ ul, li {margin:0;padding:0;list-style: none}
   --font-size-L: 2rem;
   --font-size-XL: 3rem;
   --font-size-XXL: 3.6rem;
+  --font-size-nav: var(--font-size-S);
+  --padding-content: 10px;
   --post-padding: 1.2em;
   --post-margin: 1.2em;
   --width-login: 30rem;
@@ -63,30 +74,61 @@ html {
 
 body {
   font-family: 'Inter', "Helvetica Neue", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
   background-color: var(--color-bg);
+  color: var(--color-txt-link);
   font-size: var(--font-size-M);
   font-weight: 400;
   line-height: 1.5em;
 }
 
+a {
+  color: var(--color-txt-link);
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 .content-wrapper {
   max-width: var(--width-max-content);
   margin: 0 auto;
+  padding: var(--padding-content);
+}
+
+.simple-nav {
+  background-color: var(--color-bg-nav);
+  width: 100%;
+  ul {
+    display: flex;
+    font-size: var(--font-size-nav);
+    line-height: 1.4em;
+    max-width: var(--width-max-content);
+    margin: 0 auto;
+    padding: 14px var(--padding-content);
+    h2 {
+      font-size: var(--font-size-nav);
+      text-align: left;
+      margin: 0;
+    }
+    li:first-child {
+      flex: auto;
+    }
+  }
 }
 
 h1 {
   font-size: var(--font-size-XL);
   font-weight: 800;
   line-height: 1em;
-  margin: 1em auto 0.5em auto;
+  margin: 1em auto;
   text-align: center;
 }
 
 h2 {
   font-size: var(--font-size-L);
-  font-weight: 800;
+  font-weight: 700;
   margin: 1em 0;
-  text-align: center;
 }
 
 .avatar {
@@ -101,70 +143,43 @@ h2 {
   }
 }
 
-.albums-container {
+
+.calendar-div {
+  background-color: var(--color-bg-calendar-div);
+}
+
+.cal-tbl-header {
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  margin: 0 auto;
-  flex-flow: wrap row;
-}
-.per-album {
-  width: 300px;
-  margin: 18px;
-}
-.album-name {
-  font-weight: 700;
-}
-.album-artist {
-  color: var(--color-txt-meta);
-}
-
-
-.calendar {
-  margin: 0;
-  padding: 1em;
   h2 {
-    margin: 0 0 0.3em 0;
+    flex: auto;
+    margin: 0;
     span {
-      font-weight: 400;
+      color: #666;
+      font-weight: 200;
+      letter-spacing: -1px;
     }
   }
-  table.calendar-tbl {
-    margin: 0.5em auto;
-    font-size: var(--font-size-S);
-    line-height: 1em;
-    td {
-      border-right: 1px solid #ccc;
-      border-bottom: 1px solid #ccc;
-      width: 34px;
-      height: 34px;
-      padding: 6px;
-      text-align: right;
-      &.today {
-        font-weight: 700;
-      }
-      .checked {
-        display: block;
-        font-size: 2em;
-        color: green;
-        text-align: center;
-      }
-      .not {
-        color: #ccc;
-      }
+  a {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    display: block;
+    text-align: center;
+    width: 24px;
+    font-size: 1.2em;
+    color: #aaa;
+    &:hover {
+      background-color: var(--color-white);
+      color: var(--color-txt-link);
+      border-color: #aaa;
     }
-    td:first-child {
-      border-left: 1px solid #ccc;
-    }
-    tr:first-child td {
-      border-top: 2px solid #999;
+    &.last {
+      margin-left: 4px;
     }
   }
 }
 
 .calendar-tbl {
   display: grid;
-  color: #444;
   grid-template-columns: repeat(7, 1fr);
   grid-auto-rows: 48px;
   margin: 0.5em auto;
@@ -173,26 +188,51 @@ h2 {
   overflow: auto;
   border-top: 2px solid #666;
   div {
+    background-color: var(--color-bg-cal-grid);
     border-left: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
     padding: 6px;
     text-align: right;
-  }
-  div:nth-of-type(7n) {
-    border-right: 1px solid #ccc;
-  }
-  div.out-of-range {
-    background-color: #e6e6e6;
-    color: #aaa;
+    &:nth-of-type(7n) {
+      border-right: 1px solid #ccc;
+    }
+    &:hover {
+      background-color: var(--color-bg-cal-grid-hover);
+    }
+    &.out-of-range {
+      background-color: var(--color-bg-cal-grid-outrange);
+      color: #aaa;
+    }
+    &.checked {
+      .fas {
+        color: green;
+      }
+    }
+    &.missed {
+    }
+    &.today {
+      background-color: var(--color-bg-cal-grid-today);
+      font-weight: 700;
+      h2 {
+        background-color: var(--color-highlight-today);
+        border-radius: 50%;
+        color: var(--color-white);
+        display: inline-block;
+        font-size: var(--font-size-XS);
+        margin: 0;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+      }
+    }
   }
   .fas {
     color: #ccc;
     display: block;
     font-size: 2em;
     text-align: center;
-  }
-  .checked {
-    color: green;
+    margin-top: -4px;
   }
 }
 
@@ -201,7 +241,7 @@ h2 {
   border: 1px solid #ddd;
   border-radius: 1em;
   font-weight: 700;
-  margin: 1em auto;
+  margin: 2em auto;
   width: 80%;
   ul {
     display: flex;
@@ -224,9 +264,13 @@ h2 {
 .update-stream {
   background-color: var(--color-bg-dark);
   color: var(--color-txt-light);
-  margin: 2em 0 0 0;
+  margin: 0;
   padding: 1em 0 4em 0;
   border-top: 1px solid var(--color-border-dark);
+  h2 {
+    margin: 0;
+    text-align: center;
+  }
   .an-update {
     max-width: 560px;
     margin: 0 auto;
