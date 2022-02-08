@@ -21,6 +21,7 @@ ul, li {margin:0;padding:0;list-style: none}
   --color-pink: rgb(255, 181, 252);
   --color-bg: rgb(243, 244, 239);
   --color-bg-cal-div: rgb(243, 244, 239);
+  --color-bg-cheer: rgb(237, 237, 233);
   --color-bg-cal-grid: rgb(252, 253, 254);
   --color-bg-cal-grid-hover: rgb(241, 255, 241);
   --color-bg-cal-grid-checked: rgb(225, 253, 226);
@@ -29,7 +30,8 @@ ul, li {margin:0;padding:0;list-style: none}
   --color-bg-cal-grid-outrange: var(--color-bg-cal-div);
   --color-bg-nav: var(--color-white);
   --color-bg-dark: rgb(27, 17, 74);
-  --color-highlight-today: red;
+  --color-btn-boom-bg: rgb(212, 54, 118);
+  --color-highlight-today: rgb(212, 54, 118);
   --color-post-border: #ddd;
   --color-hr: #ccc;
   --color-txt: rgb(35, 28, 51);
@@ -46,6 +48,7 @@ ul, li {margin:0;padding:0;list-style: none}
   --font-size-L: 2rem;
   --font-size-XL: 3rem;
   --font-size-XXL: 3.6rem;
+  --font-size-today: 1rem;
   --font-size-nav: var(--font-size-S);
   --padding-content: 10px;
   --post-padding: 1.2em;
@@ -65,6 +68,7 @@ ul, li {margin:0;padding:0;list-style: none}
     --font-size-L: 2.6rem;
     --font-size-XL: 3.5rem;
     --font-size-XXL: 4.6rem;
+    --font-size-today: var(--font-size-S);
   }
 }
 
@@ -113,6 +117,14 @@ a {
     }
     li:first-child {
       flex: auto;
+    }
+    a.boom {
+      background-color: var(--color-btn-boom-bg);
+      border-radius: 16px;
+      color: var(--color-white);
+      font-weight: 500;
+      padding: 6px 12px;
+      text-decoration: none;
     }
   }
 }
@@ -211,19 +223,21 @@ h2 {
     &.missed {
     }
     &.today {
-      background-color: var(--color-bg-cal-grid-today);
-      font-weight: 700;
       h2 {
         background-color: var(--color-highlight-today);
         border-radius: 50%;
         color: var(--color-white);
         display: inline-block;
-        font-size: var(--font-size-XS);
-        margin: 0;
-        width: 20px;
-        height: 20px;
-        line-height: 20px;
+        font-size: var(--font-size-today);
+        font-weight: 500;
+        margin: -4px -4px 0 0;
+        width: 15px;
+        height: 15px;
+        line-height: 15px;
         text-align: center;
+      }
+      .fas {
+        margin-top: -6px;
       }
     }
   }
@@ -237,7 +251,7 @@ h2 {
 }
 
 .cheer-cheer {
-  background-color: #eee;
+  background-color: var(--color-bg-cheer);
   border: 1px solid #ddd;
   border-radius: 1em;
   font-weight: 700;
@@ -296,10 +310,23 @@ h2 {
     grid-auto-rows: 95px;
     div {
       padding: 10px;
+      &.today {
+        h2 {
+          font-weight: 500;
+          margin: -4px -6px 0 0;
+          width: 20px;
+          height: 20px;
+          line-height: 20px;
+        }
+        .fas {
+          margin-top: -4px;
+        }
+      }
     }
     .fas {
       font-size: 3em;
       padding-top: 5px;
+      margin-top: -2px;
     }
   }
   .cheer-cheer {
