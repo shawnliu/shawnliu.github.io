@@ -22,7 +22,7 @@ ul, li {margin:0;padding:0;list-style: none}
   --color-post-border: #ddd;
   --color-hr: #ccc;
   --color-txt: rgb(35, 28, 51);
-  --color-txt-link: #a221c2;
+  --color-txt-link: var(--color-txt);
   --color-txt-meta: #888;
   --font-size-base: 10px;
   --font-size-XS: 1.1rem;
@@ -75,6 +75,18 @@ h1 {
   text-align: center;
 }
 
+a {
+  color: var(--color-txt-link);
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+iframe {
+  display: block;
+}
+
 .albums-container {
   display: flex;
   align-items: flex-start;
@@ -85,10 +97,18 @@ h1 {
 .per-album {
   width: 300px;
   margin: 18px;
-}
-.album-name {
-  font-weight: 700;
-}
-.album-artist {
-  color: var(--color-txt-meta);
+  .album-art {
+    img {
+     width: 100%;
+    }
+  }
+  .album-info {
+    margin: 10px 0;
+  }
+  .album-name {
+    font-weight: 700;
+  }
+  .album-artist {
+    color: var(--color-txt-meta);
+  }
 }
