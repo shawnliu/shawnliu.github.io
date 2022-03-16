@@ -100,6 +100,27 @@ h1 {
   }
 }
 
+/* styles specifically for the ig-links page */
+.ig-links {
+  h1 {
+    margin: 1em 0;
+    line-height: 1.1em;
+  }
+  .link-chunk {
+    margin: 1em 0;
+    h2 {
+      font-weight: 700;
+      margin: 0;
+    }
+    a {
+      font-weight: 700;
+    }
+    ul {
+      margin: 0.5em 0;
+    }
+  }
+}
+
 ul {
   margin: 1em 0;
 }
