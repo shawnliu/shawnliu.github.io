@@ -99,7 +99,8 @@ iframe {
   margin: 18px;
   .album-art {
     img {
-     width: 100%;
+      display: block;
+      width: 100%;
     }
   }
   .album-info {
