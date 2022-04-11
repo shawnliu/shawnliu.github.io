@@ -293,7 +293,6 @@ h2 {
     border-bottom: 1px solid var(--color-border-light);
   }
   .an-update {
-    display: flex;
     .avatar {
       width: var(--avatar-width-M);
       margin-right: 0.5em;
@@ -302,6 +301,20 @@ h2 {
     .update-meta {
       color: var(--color-txt-meta-light);
       font-size: var(--font-size-S);
+    }
+  }
+  .log-cheers {
+    border-radius: 8px;
+    font-size: var(--font-size-S);
+    line-height: 1.4em;
+    padding: 8px 8px;
+    a {
+      color: white;
+      margin: 0 4px;
+      &:hover {
+        line-height: 1em;
+        font-size: 1.4em;
+      }
     }
   }
 }
