@@ -114,13 +114,17 @@ h1 {
     margin: 1em 0;
     h2 {
       font-weight: 700;
-      margin: 0;
+      margin: 2em 0 1em 0;
     }
     a {
       font-weight: 700;
     }
     ul {
-      margin: 0.5em 0;
+      margin: 1em 0 1em 1em;
+      li {
+        list-style: disc;
+        margin: 0.8em 0;
+      }
     }
   }
 }
