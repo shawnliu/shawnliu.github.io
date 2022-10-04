@@ -172,3 +172,28 @@ ul {
     }
   }
 }
+
+.zoomzoom {
+  img {
+    width: auto;
+    max-width: 100%;
+  }
+  .reference-photos {
+    li {
+      margin: 2em 0;
+      span {
+        font-size: 0.8em;
+      }
+    }
+  }
+}
+@media (min-width: 800px) {
+  .zoomzoom {
+    .reference-photos {
+      img {
+        display: block;
+        max-width: 80%;
+      }
+    }
+  }  
+}
