@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Today...
 ---
 <h1 class="center">Today</h1>

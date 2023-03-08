@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,500;0,700;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
 
 @mixin transition($tr) {
@@ -11,6 +12,9 @@ html {margin:0;padding:0;border:0;}
 body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
 ul, li {margin:0;padding:0;list-style: none}
 
+*, ::before, ::after {
+  box-sizing: border-box;
+}
 
 :root {
   --color-white: #fff;
@@ -24,7 +28,7 @@ ul, li {margin:0;padding:0;list-style: none}
   --font-size-base: 10px;
   --font-size-XS: 1.1rem;
   --font-size-S: 1.4rem;
-  --font-size-M: 1.7rem;
+  --font-size-M: 1.6rem;
   --font-size-L: 2rem;
   --font-size-XL: 3rem;
   --font-size-XXL: 3.6rem;
@@ -41,7 +45,7 @@ ul, li {margin:0;padding:0;list-style: none}
   :root {
     --font-size-XS: 1.2rem;
     --font-size-S: 1.6rem;
-    --font-size-M: 1.8rem;
+    --font-size-M: 1.6rem;
     --font-size-L: 2rem;
     --font-size-XL: 3.5rem;
     --font-size-XXL: 4.6rem;
@@ -53,11 +57,11 @@ html {
 }
 
 body {
-  font-family: 'Inter', "Helvetica Neue", Helvetica, sans-serif;
+  font-family: 'Roboto Mono', Courier, monospace;
   background-color: var(--color-bg);
   font-size: var(--font-size-M);
-  font-weight: 400;
-  line-height: 1.5em;
+  font-weight: 300;
+  line-height: 1.6;
 }
 
 img {
@@ -90,6 +94,7 @@ hr {
 
 h1 {
   font-size: var(--font-size-XL);
+  line-height: 1.4;
   font-weight: 800;
   margin: 1em 0;
   &.home {
@@ -131,6 +136,14 @@ h1 {
 
 ul {
   margin: 1em 0;
+}
+
+@media (min-width: 600px) {
+  .home-divs {
+    column-gap: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .posts-list {
