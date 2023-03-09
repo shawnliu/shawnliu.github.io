@@ -40,6 +40,12 @@ ul, li {margin:0;padding:0;list-style: none}
   --padding-bottom: 4rem;
   --padding-content: 8px;
 }
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: rgb(35, 28, 51);
+    --color-txt: #f3f3f3;
+  }
+}
 
 @media (min-width: 60em) {
   :root {
@@ -57,15 +63,16 @@ html {
 }
 
 body {
-  font-family: 'Roboto Mono', Courier, monospace;
   background-color: var(--color-bg);
+  color: var(--color-txt);
+  font-family: 'Roboto Mono', Courier, monospace;
   font-size: var(--font-size-M);
   font-weight: 300;
   line-height: 1.6;
 }
 
 a {
-  color: #333;
+  color: var(--color-txt);
   &:hover {
     text-decoration: none;
   }
