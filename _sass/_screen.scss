@@ -64,10 +64,6 @@ body {
   line-height: 1.6;
 }
 
-img {
-  width: 100%;
-}
-
 a {
   color: #333;
   &:hover {
@@ -97,9 +93,6 @@ h1 {
   line-height: 1.4;
   font-weight: 800;
   margin: 1em 0;
-  &.home {
-    font-size: var(--font-size-XXL);
-  }
   &.with-meta {
     margin-top: 3px;
   }
@@ -146,7 +139,14 @@ ul {
   }
 }
 
+.homepage-bubble {
+  margin-top: 1em;
+}
+
 @media (min-width: 600px) {
+  .homepage-bubble {
+    margin-top: 2em;
+  }
   .home-divs {
     column-gap: 1em;
     display: grid;
