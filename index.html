@@ -28,13 +28,15 @@ title: This is my homepage.
 
 <div class="noshow">
   <ul class="posts-list">
-    {% for post in site.posts %}
+    {% for post in site.categories.blog %}
       <li>
         <a href="{{ post.url }}">{{ post.title }}</a>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
       </li>
     {% endfor %}
   </ul>
+
+
 
   <p>
     More soon.

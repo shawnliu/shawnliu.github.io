@@ -1,6 +1,7 @@
 ---
-layout: posts
 title: Banana on a Stick
+categories: blog
+layout: posts
 ---
 
 Sometimes in the middle of the night I wake up to pee and can't fall back asleep&mdash;and then, lying there in the dark with my mind half-conscious, I compose urgent, ambitious essays. I never write them down at the time so I don't wake up my wife. But a few hours later, after I wake up for the day, I can hardly remember even the topic of my profound essay. And when I try to actually type up that essay later, I struggle to squeeze out even one coherent sentence.

@@ -1,6 +1,7 @@
 ---
-layout: posts
 title: Brainy Ants
+categories: blog
+layout: posts
 ---
 
 
