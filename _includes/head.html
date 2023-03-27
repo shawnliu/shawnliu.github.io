@@ -4,4 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    <title>
+      {% if page.categories[0] == "zoomzoom" %}Zoom Zoom Drawing Club: {% endif %}
+      {% if page.title %}{{ page.title }} - {% endif %}{{site.me.site_name}}</title>
   </head>

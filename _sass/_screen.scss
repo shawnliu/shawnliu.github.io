@@ -9,8 +9,7 @@
 
 /* reset */
 html {margin:0;padding:0;border:0;}
-body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
-ul, li {margin:0;padding:0;list-style: none}
+body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, code, del, dfn, em, img, q, dl, dt, dd, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
 
 *, ::before, ::after {
   box-sizing: border-box;
@@ -44,6 +43,9 @@ ul, li {margin:0;padding:0;list-style: none}
   :root {
     --color-bg: rgb(35, 28, 51);
     --color-txt: #f3f3f3;
+  }
+  img.invert_dark {
+    filter: invert(1);
   }
 }
 
@@ -82,7 +84,7 @@ em {
   font-style: italic;
 }
 
-strong {
+strong, p.strong {
   font-weight: 700;
 }
 
@@ -90,8 +92,18 @@ p {
   margin: 1em 0;
 }
 
+ul {
+  list-style: "– ";
+  padding-left: 2ch;
+}
+
+ol {
+  list-style: decimal-leading-zero;
+  padding-left: 5ch;
+}
+
 hr {
-  border: 1px solid var(--color-hr);
+  border-top: 1px solid var(--color-hr);
   margin: 1.6em 0;
 }
 
@@ -103,6 +115,11 @@ h1 {
   &.with-meta {
     margin-top: 3px;
   }
+}
+
+h3 {
+  font-weight: 500;
+  margin: 2em 0 1em 0;
 }
 
 .noshow {
@@ -127,7 +144,6 @@ h1 {
     ul {
       margin: 1em 0 1em 1em;
       li {
-        list-style: disc;
         margin: 0.8em 0;
       }
     }
@@ -148,6 +164,10 @@ ul {
 
 .homepage-bubble {
   margin-top: 1em;
+  ul, li {
+    list-style: none;
+    padding: 0;
+  }
 }
 
 @media (min-width: 600px) {
@@ -210,10 +230,17 @@ ul {
   img {
     width: auto;
     max-width: 100%;
+    &.logo {
+      display: block;
+      width: 70%;
+      margin: 2em auto;
+    }
   }
   .reference-photos {
     li {
+      list-style: none;
       margin: 4em 0;
+      padding: 0;
       span {
         font-size: 0.8em;
       }
@@ -225,7 +252,7 @@ ul {
     .reference-photos {
       img {
         display: block;
-        max-width: 80%;
+        max-width: 90%;
       }
     }
   }  
