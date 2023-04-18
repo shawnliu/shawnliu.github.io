@@ -221,9 +221,13 @@ ul {
   }
 }
 
+/* used only on zoom zoom pages? */
 .footer-symbol {
-  font-size: 2em;
-  margin: 2em 0;
+  font-size: 2.5em;
+  margin: 1em 0; 
+  a {
+    text-decoration: none;
+  }
 }
 
 .zoomzoom {
