@@ -1,0 +1,1 @@
+<a href="/assets/images/zoomzoom/{{ include.img }}"><img src="/assets/images/zoomzoom/{{ include.img }}"></a>
