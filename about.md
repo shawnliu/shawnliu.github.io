@@ -14,3 +14,7 @@ For a couple hours a day, I also do some <a href="https://goodenough.us">stuff</
 Years ago my mother noticed that I like to take pictures of trash. She thought it was odd. I reminded her that I got my genes from her.
 
 You can find me on <a href="https://www.instagram.com/mrshawnliu/">Instagram</a>. Call me sir, or mister, especially if you're younger than 18, ok? Glad we understand each other.
+
+If you must get in touch with me, fill out this form:
+
+<script data-letterbirduser="mrshawnliu" src="https://letterbird.co/embed/v1.js"></script>
