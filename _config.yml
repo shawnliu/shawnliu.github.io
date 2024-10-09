@@ -27,6 +27,7 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
+future: false
 markdown: kramdown
 theme: minima
 plugins:
