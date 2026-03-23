@@ -7,7 +7,7 @@ title: About me
 
 I, Shawn Liu, am an award-winning father of two boys, living in Brooklyn NY USA. My favorite time of the day is in the early morning when I have my coffee, alone, with a book (usually a novel).
 
-Over the last few years I worked on a [zine](https://www.patreon.com/MRSHAWNLIU), but it's been on hiatus. The drawing hasn't stop, and I've recently picked up painting with oil.
+Over the last few years I worked on a [zine](https://www.patreon.com/MRSHAWNLIU), but it's been on hiatus. The drawing hasn't [stopped](https://everytoiletinnewyork.pika.page), and I've recently picked up painting with oil.
 
 In my previous life, I founded a business ([Harvest](https://www.getharvest.com)) and got real lucky with it (grateful, astonished, never take it for granted, etc).
 
