@@ -101,6 +101,9 @@ ul {
 ol {
   list-style: decimal-leading-zero;
   padding-left: 5ch;
+  li {
+    margin: 1em 0;
+  }
 }
 
 hr {
@@ -263,24 +266,98 @@ ul {
   }  
 }
 
-form {
-  input {
+.form-section {
+  margin-top: 2.5em;
+}
+
+.form-field {
+  margin-bottom: 1.6em;
+
+  label {
+    display: block;
+    font-size: var(--font-size-M);
+    font-weight: 500;
+    margin-bottom: 0.4em;
+  }
+
+  .optional {
+    font-weight: 300;
+    color: var(--color-txt-meta);
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="time"],
+  textarea {
     border: 1px solid var(--color-form-border);
     border-radius: 8px;
-    display: inline-block;
+    display: block;
     font: inherit;
-    line-height: 1em;
-    margin: 0.3em 0;
+    line-height: 1.5;
+    margin: 0;
     padding: 8px 12px;
-    width: 300px;
+    width: 100%;
+    max-width: 480px;
+    background: var(--color-white);
+    color: var(--color-txt);
+    @media (prefers-color-scheme: dark) {
+      background: rgb(55, 45, 75);
+      border-color: #555;
+    }
   }
+
+  textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+
+  .hint {
+    display: block;
+    font-size: var(--font-size-S);
+    color: var(--color-txt-meta);
+    margin-top: 0.4em;
+  }
+
+  .radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    margin-top: 0.2em;
+
+    label {
+      display: flex;
+      align-items: center;
+      gap: 0.6em;
+      font-weight: 300;
+      font-size: var(--font-size-M);
+      margin: 0;
+      cursor: pointer;
+    }
+
+    input[type="radio"] {
+      width: auto;
+      margin: 0;
+      cursor: pointer;
+    }
+  }
+}
+
+form {
   input[type="submit"] {
     background-color: var(--color-txt);
     color: var(--color-bg);
+    border: none;
+    border-radius: 8px;
     cursor: pointer;
-    width: auto;
+    font: inherit;
+    font-weight: 500;
+    padding: 10px 24px;
+    margin-top: 0.5em;
+    &:hover {
+      opacity: 0.85;
+    }
     &:active {
-      transform: scale(0.95);
+      transform: scale(0.96);
     }
   }
 }
