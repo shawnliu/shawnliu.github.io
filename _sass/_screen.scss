@@ -178,11 +178,6 @@ ul {
   .homepage-bubble {
     margin-top: 2em;
   }
-  .home-divs {
-    column-gap: 1em;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
 }
 
 .posts-list {
@@ -350,8 +345,8 @@ form {
     border-radius: 8px;
     cursor: pointer;
     font: inherit;
-    font-weight: 500;
-    padding: 10px 24px;
+    font-weight: 300;
+    padding: 6px 16px;
     margin-top: 0.5em;
     &:hover {
       opacity: 0.85;

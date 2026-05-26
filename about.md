@@ -5,11 +5,10 @@ title: About me
 
 # About me
 
-I, Shawn Liu, am an award-winning father of two boys, living in Brooklyn NY USA. My favorite time of the day is in the early morning when I have my coffee, alone, with a book (usually a novel).
+I, MRSHAWNLIU, am 47 years old and currently living in Brooklyn NY USA.
+My favorite time of the day is in the early morning when I have my coffee, alone, with a book (usually a novel).
 
-Over the last few years I worked on a [zine](https://www.patreon.com/MRSHAWNLIU), but it's been on hiatus. The drawing hasn't [stopped](https://everytoiletinnewyork.pika.page), and I've recently picked up painting with oil.
-
-In my previous life, I founded a business ([Harvest](https://www.getharvest.com)) and got real lucky with it (grateful, astonished, never take it for granted, etc).
+I draw, paint, and mail things to strangers.
 
 Years ago my mother noticed that I like to take pictures of trash. She thought it was odd. I reminded her that I got my genes from her.
 
